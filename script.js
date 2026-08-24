@@ -445,20 +445,30 @@ document.querySelectorAll('.project-card').forEach(card => {
   card.addEventListener('mouseleave', () => { card.style.transform = ''; });
 });
 
-// Contador animado en LABIF cuando entra en pantalla
+// Contador animado en LABIF — USD calculado con precio BTC en tiempo real
 const lbtcEl = document.querySelector('.lbtc');
 const lusdEl = document.querySelector('.lusd');
+const LABIF_BTC = 2.51;
+
 if (lbtcEl && lusdEl) {
+  let usdTarget = 164000; // fallback si el fetch falla
+  const pricePromise = fetch('https://mempool.space/api/v1/prices')
+    .then(r => r.json())
+    .then(data => { usdTarget = Math.round(LABIF_BTC * data.USD); })
+    .catch(() => {});
+
   new IntersectionObserver(([e], obs) => {
     if (!e.isIntersecting) return;
     obs.disconnect();
-    const t0 = performance.now();
-    (function tick(now) {
-      const p = Math.min((now - t0) / 1800, 1);
-      const ease = 1 - Math.pow(1 - p, 3);
-      lbtcEl.textContent = (ease * 2.51).toFixed(2);
-      lusdEl.textContent = Math.round(ease * 164000).toLocaleString('es-AR');
-      if (p < 1) requestAnimationFrame(tick);
-    })(t0);
+    pricePromise.finally(() => {
+      const t0 = performance.now();
+      (function tick(now) {
+        const p = Math.min((now - t0) / 1800, 1);
+        const ease = 1 - Math.pow(1 - p, 3);
+        lbtcEl.textContent = (ease * LABIF_BTC).toFixed(2);
+        lusdEl.textContent = Math.round(ease * usdTarget).toLocaleString('en-US');
+        if (p < 1) requestAnimationFrame(tick);
+      })(t0);
+    });
   }, { threshold: 0.6 }).observe(lbtcEl.closest('.labif-total'));
 }
