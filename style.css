@@ -449,6 +449,10 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   color: #111;
   margin-right: 0.25rem;
 }
+.labif-btc-highlight {
+  font-size: 1.25em;
+  color: var(--orange);
+}
 .labif-total {
   margin: 0.75rem 0;
   padding: 0.6rem 1rem;
