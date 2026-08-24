@@ -81,7 +81,7 @@ const translations = {
     labif_p10_title: "Descubriendo Bitcoin Uruguay",
     labif_p10_desc: "Educar a nuevas comunidades en Uruguay sobre Bitcoin mediante talleres gratuitos, materiales abiertos y una metodología simple, medible y replicable.",
     labif_p11_title: "La Bitcoineta",
-    labif_p11_desc: "Jornadas móviles gratuitas de Bitcoin y soberanía financiera llevadas a comunidades de Argentina, una jornada a la vez.",
+    labif_p11_desc: "Educación móvil gratuita de Bitcoin y soberanía financiera llevada a comunidades de Argentina, un workshop móvil a la vez.",
     labif_p12_title: "BitDevs Lima",
     labif_p12_desc: "El formato de meetup técnico Bitcoin replicado en ciudades del mundo, ahora en Lima, uno de los principales centros financieros de LATAM.",
     labif_p13_title: "Satoshi Somos Todos",
