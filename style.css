@@ -429,7 +429,7 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   .sponsor-logos { flex-direction: column; }
   .sponsor-item { flex: unset; width: 100%; }
 }
-.sponsor-logo { height: 53px; object-fit: contain; max-width: 200px; }
+.sponsor-logo { height: 66px; object-fit: contain; max-width: 250px; }
 .sponsor-logo--dark { filter: brightness(0); }
 .sponsor-name {
   font-size: 0.8rem;
@@ -842,7 +842,7 @@ footer p { font-size: 0.9rem; color: rgba(255,255,255,0.5); }
 }
 
 /* ── SPONSOR FBI LOGO ── */
-.sponsor-logo--fbi { height: 108px !important; }
+.sponsor-logo--fbi { height: 135px !important; }
 
 /* ── ANIMACIONES ── */
 
