@@ -58,7 +58,7 @@ const translations = {
     contact_location: "Con registro y oficina central en Uruguay.",
     footer_copy: "© 2026 Fundación Bitcoin Iberoamérica. Todos los derechos reservados.",
     labif_awarded_label: "Proyectos Financiados — LABIF 2026",
-    labif_awarded_intro: "Algunos de los proyectos e iniciativas que reciben apoyo de la <strong class=\"labif-hl\">LABIF</strong> — <strong class=\"labif-hl\">Latin America Bitcoin Impact Fund</strong>.",
+    labif_awarded_intro: "Algunos de los proyectos e iniciativas que reciben apoyo de la <strong>LA<span class=\"labif-b\">B</span>IF</strong> — <strong class=\"labif-hl\">Latin America Bitcoin Impact Fund</strong>.",
     tag_direct_grant: "Direct Grant",
     labif_p1_title: "Scaling Grassroots Bitcoin Education Across Latin America",
     labif_p1_desc: "El fondo LABIF permite desarrollar educación gratuita en campo y un modelo en línea para sustentarla a largo plazo en toda la región.",
@@ -155,7 +155,7 @@ const translations = {
     contact_location: "Registered and headquartered in Uruguay.",
     footer_copy: "© 2026 Fundación Bitcoin Iberoamérica. All rights reserved.",
     labif_awarded_label: "Projects Awarded — LABIF 2026",
-    labif_awarded_intro: "Some of the projects and initiatives supported by <strong class=\"labif-hl\">LABIF</strong> — <strong class=\"labif-hl\">Latin America Bitcoin Impact Fund</strong>.",
+    labif_awarded_intro: "Some of the projects and initiatives supported by <strong>LA<span class=\"labif-b\">B</span>IF</strong> — <strong class=\"labif-hl\">Latin America Bitcoin Impact Fund</strong>.",
     tag_direct_grant: "Direct Grant",
     labif_p1_title: "Scaling Grassroots Bitcoin Education Across Latin America",
     labif_p1_desc: "LABIF funding helps run free field education now and an online model built to sustain it long term across the region.",
@@ -252,7 +252,7 @@ const translations = {
     contact_location: "Registrada e com sede central no Uruguai.",
     footer_copy: "© 2026 Fundación Bitcoin Iberoamérica. Todos os direitos reservados.",
     labif_awarded_label: "Projetos Financiados — LABIF 2026",
-    labif_awarded_intro: "Alguns dos projetos e iniciativas que recebem apoio da <strong class=\"labif-hl\">LABIF</strong> — <strong class=\"labif-hl\">Latin America Bitcoin Impact Fund</strong>.",
+    labif_awarded_intro: "Alguns dos projetos e iniciativas que recebem apoio da <strong>LA<span class=\"labif-b\">B</span>IF</strong> — <strong class=\"labif-hl\">Latin America Bitcoin Impact Fund</strong>.",
     tag_direct_grant: "Direct Grant",
     labif_p1_title: "Scaling Grassroots Bitcoin Education Across Latin America",
     labif_p1_desc: "O fundo LABIF permite desenvolver educação gratuita no campo e um modelo online para sustentá-la a longo prazo em toda a região.",
@@ -317,11 +317,20 @@ function setLang(lang) {
     .forEach(sel => document.querySelector(sel)?.setAttribute('content', t.og_description));
   document.querySelector('meta[property="og:locale"]')?.setAttribute('content', localeMap[lang] || 'es_ES');
   highlightBitcoin();
+  highlightLabif();
 }
 
 document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', () => setLang(btn.dataset.lang));
 });
+
+function highlightLabif() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    if (!el.textContent.includes('LABIF')) return;
+    el.innerHTML = el.innerHTML.replace(/LABIF/g,
+      '<strong>LA<span class="labif-b">B</span>IF</strong>');
+  });
+}
 
 function highlightBitcoin() {
   document.querySelectorAll('p[data-i18n], p[data-i18n-html], h3[data-i18n], .mission-text').forEach(el => {
