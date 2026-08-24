@@ -445,6 +445,32 @@ document.querySelectorAll('.project-card').forEach(card => {
   card.addEventListener('mouseleave', () => { card.style.transform = ''; });
 });
 
+// Banderas — wrapper con overflow:hidden para tamaño exacto igual en todos los SVGs
+document.querySelectorAll('.flag-img').forEach(img => {
+  const box = document.createElement('span');
+  box.className = 'flag-box';
+  img.parentNode.insertBefore(box, img);
+  box.appendChild(img);
+});
+
+// LABIF — LA + B naranja + IF, negrita
+(function() {
+  function walk(el) {
+    [...el.childNodes].forEach(node => {
+      if (node.nodeType === 3 && node.textContent.includes('LABIF')) {
+        const span = document.createElement('span');
+        span.innerHTML = node.textContent.replace(/LABIF/g,
+          '<strong>LA<span class="labif-b">B</span>IF</strong>');
+        node.replaceWith(span);
+      } else if (node.nodeType === 1 &&
+                 !['SCRIPT','STYLE','CODE','PRE','STRONG','A'].includes(node.tagName)) {
+        walk(node);
+      }
+    });
+  }
+  walk(document.body);
+})();
+
 // Contador animado en LABIF — USD calculado con precio BTC en tiempo real
 const lbtcEl = document.querySelector('.lbtc');
 const lusdEl = document.querySelector('.lusd');

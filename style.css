@@ -714,18 +714,29 @@ footer p { font-size: 0.9rem; color: rgba(255,255,255,0.5); }
   color: var(--text-muted);
   letter-spacing: 0.04em;
 }
-.flag-img {
+.flag-box {
+  display: inline-flex;
   width: 42px;
   height: 28px;
-  object-fit: cover;
   border-radius: 2px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.flag-img {
+  width: 100%;
+  height: 100%;
   display: block;
+  flex-shrink: 0;
 }
 .labif-awarded-wrap .btn-geyser {
   padding: 0.18rem 0.85rem;
   font-size: 0.85rem;
 }
 .labif-hl {
+  color: var(--orange);
+  font-weight: 700;
+}
+.labif-b {
   color: var(--orange);
   font-weight: 700;
 }
