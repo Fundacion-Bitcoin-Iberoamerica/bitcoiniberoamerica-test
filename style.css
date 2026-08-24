@@ -715,8 +715,9 @@ footer p { font-size: 0.9rem; color: rgba(255,255,255,0.5); }
   letter-spacing: 0.04em;
 }
 .flag-img {
-  width: auto;
+  width: 42px;
   height: 28px;
+  object-fit: cover;
   border-radius: 2px;
   display: block;
 }
