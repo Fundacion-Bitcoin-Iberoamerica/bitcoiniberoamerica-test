@@ -462,14 +462,17 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   font-size: 1.15rem;
   font-weight: 700;
   color: #111;
-  text-align: center;
   letter-spacing: 0.02em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35em;
 }
 .labif-usd-sub {
-  font-size: 0.55em;
+  font-size: 0.72em;
   font-weight: 600;
   color: #111;
-  vertical-align: middle;
 }
 .labif-geyser-row {
   display: flex;
