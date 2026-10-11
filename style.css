@@ -439,7 +439,7 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   padding: 0.5rem 0.75rem;
 }
 .labif-aliados-title {
-  font-size: 0.68rem;
+  font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -726,7 +726,7 @@ footer p { font-size: 0.9rem; color: rgba(255,255,255,0.5); }
 .project-card--labif .tag { font-size: 0.81rem; }
 .project-card--labif .labif-total { font-size: 1.44rem; }
 .project-card--labif .labif-sponsors-title { font-size: 1.05rem; }
-.project-card--labif .labif-aliados-title { font-size: 0.68rem; }
+.project-card--labif .labif-aliados-title { font-size: 0.88rem; }
 .project-card--labif .labif-powered { font-size: 0.875rem; color: rgba(255,255,255,0.5); }
 .project-card--labif .btn-geyser { font-size: 1.13rem; }
 
