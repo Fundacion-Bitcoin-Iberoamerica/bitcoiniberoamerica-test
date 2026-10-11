@@ -464,7 +464,8 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   border-radius: 8px;
 }
 .aliado-logo { height: 47px; object-fit: contain; max-width: 182px; }
-.aliado-logo--sm { height: 38px; }
+.aliado-logo--sm { height: 29px; }
+.aliado-item--trezor { height: 62px; }
 .sponsor-name {
   font-size: 0.8rem;
   font-weight: 700;
