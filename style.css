@@ -402,7 +402,7 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
 }
 .labif-sponsors > span { font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.75rem; }
 .labif-sponsors-title {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
