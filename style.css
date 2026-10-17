@@ -521,20 +521,20 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: #ffffff;
+  background: #0d1117;
   border-radius: 10px;
   padding: 0.55rem 1rem;
   text-decoration: none;
   transition: transform 0.2s, box-shadow 0.2s;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid rgba(255,255,255,0.08);
 }
 .geyser-badge:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.5);
 }
 .labif-powered {
   font-size: 0.7rem;
-  color: rgba(0,0,0,0.4);
+  color: rgba(255,255,255,0.5);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   white-space: nowrap;
