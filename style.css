@@ -443,7 +443,11 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   flex-direction: column;
   align-items: center;
   margin-top: 0.5rem;
-  padding: 0.5rem 0.75rem;
+  padding: 0.65rem 0.9rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-align: center;
 }
 .labif-aliados-title {
   font-size: 0.88rem;
