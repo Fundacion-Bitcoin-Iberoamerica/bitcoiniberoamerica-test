@@ -396,7 +396,7 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   margin-top: 0.75rem;
   padding: 0.65rem 0.9rem;
   background: #fff;
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   border-radius: 8px;
   text-align: center;
 }
@@ -445,7 +445,7 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   margin-top: 0.5rem;
   padding: 0.65rem 0.9rem;
   background: #fff;
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   border-radius: 8px;
   text-align: center;
 }
