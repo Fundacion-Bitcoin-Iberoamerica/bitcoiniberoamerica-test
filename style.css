@@ -540,7 +540,7 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   letter-spacing: 0.08em;
   white-space: nowrap;
 }
-.geyser-logo { height: 81px; object-fit: contain; }
+.geyser-logo { height: 65px; object-fit: contain; }
 .btn-geyser {
   display: inline-block;
   padding: 0.6rem 1.2rem;
@@ -728,7 +728,7 @@ footer p { font-size: 0.9rem; color: rgba(255,255,255,0.5); }
 .project-card--labif .labif-total { font-size: 1.44rem; }
 .project-card--labif .labif-sponsors-title { font-size: 1.05rem; }
 .project-card--labif .labif-aliados-title { font-size: 0.88rem; }
-.project-card--labif .labif-powered { font-size: 1.368rem; font-weight: 700; color: var(--text); }
+.project-card--labif .labif-powered { font-size: 1.094rem; font-weight: 700; color: var(--text); }
 .project-card--labif .btn-geyser { font-size: 1.13rem; }
 
 /* ── LABIF AWARDED PROJECTS ── */
