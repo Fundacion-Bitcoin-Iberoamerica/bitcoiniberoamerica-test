@@ -727,7 +727,7 @@ footer p { font-size: 0.9rem; color: rgba(255,255,255,0.5); }
 .project-card--labif .labif-total { font-size: 1.44rem; }
 .project-card--labif .labif-sponsors-title { font-size: 1.05rem; }
 .project-card--labif .labif-aliados-title { font-size: 0.88rem; }
-.project-card--labif .labif-powered { font-size: 0.875rem; color: rgba(255,255,255,0.5); }
+.project-card--labif .labif-powered { font-size: 0.875rem; color: var(--text); }
 .project-card--labif .btn-geyser { font-size: 1.13rem; }
 
 /* ── LABIF AWARDED PROJECTS ── */
