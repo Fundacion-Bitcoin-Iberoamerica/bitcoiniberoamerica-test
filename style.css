@@ -542,8 +542,9 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   border: 1px solid var(--border);
 }
 .geyser-badge:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+  border-color: var(--orange);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px var(--shadow);
 }
 .labif-powered {
   font-size: 0.7rem;
