@@ -534,7 +534,7 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
 }
 .labif-powered {
   font-size: 0.7rem;
-  color: rgba(0,0,0,0.4);
+  color: var(--text);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   white-space: nowrap;
