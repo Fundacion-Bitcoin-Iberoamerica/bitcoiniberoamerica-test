@@ -424,6 +424,12 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   border: 1px solid var(--border);
   border-radius: 8px;
   flex: 1;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.sponsor-item:hover {
+  border-color: var(--orange);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px var(--shadow);
 }
 @media (max-width: 600px) {
   .sponsor-logos { flex-direction: column; }
@@ -463,6 +469,12 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   background: var(--bg2);
   border: 1px solid var(--border);
   border-radius: 8px;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.aliado-item:hover {
+  border-color: var(--orange);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px var(--shadow);
 }
 .aliado-logo { height: 47px; object-fit: contain; max-width: 182px; }
 .aliado-logo--sm { height: 29px; }
