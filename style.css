@@ -422,7 +422,7 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   padding: 0.75rem 1rem;
   background: var(--bg2);
   border: 3px solid var(--border);
-  border-radius: 8px;
+  border-radius: 14px;
   flex: 1;
   transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
@@ -468,7 +468,7 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   padding: 0.75rem 1rem;
   background: var(--bg2);
   border: 3px solid var(--border);
-  border-radius: 8px;
+  border-radius: 14px;
   transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .aliado-item:hover {
@@ -535,10 +535,10 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
   align-items: center;
   gap: 0.5rem;
   background: var(--bg2);
-  border-radius: 10px;
+  border-radius: 14px;
   padding: 0.55rem 1rem;
   text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
   border: 3px solid var(--border);
 }
 .geyser-badge:hover {
