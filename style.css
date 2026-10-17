@@ -431,7 +431,7 @@ a.btn-libro:hover { border-color: var(--orange); color: var(--orange); backgroun
 }
 .sponsor-logo { height: 86px; object-fit: contain; max-width: 250px; }
 .sponsor-logo--dark { filter: brightness(0); }
-.sponsor-logo--paystand { height: 108px; }
+.sponsor-logo--paystand { height: 135px; }
 .labif-aliados {
   display: flex;
   flex-direction: column;
